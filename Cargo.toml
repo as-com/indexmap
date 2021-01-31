@@ -37,9 +37,9 @@ serde = { version = "1.0", optional = true, default-features = false }
 rayon = { version = "1.0", optional = true }
 
 [dependencies.hashbrown]
-version = "0.9.1"
-default-features = false
-features = ["raw"]
+git = "https://github.com/rust-lang/hashbrown.git"
+branch = "master"
+features = ["raw", "nightly"] 
 
 [dev-dependencies]
 itertools = "0.9"
